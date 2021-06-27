@@ -1,0 +1,9 @@
+
+<div><button (click)="changeCronDisplay()">Click me to change cron expression</button></div>  
+<div><button (click)="testFormAccess()">Click me to test form access</button></div>  
+<form>
+<cron-editor #cronEditorRef   [formControl]="cronForm"  [options]="cronOptions"   (click)="checkOnChangeCronEvents()"></cron-editor>
+</form>
+<router-outlet></router-outlet>
+
+
